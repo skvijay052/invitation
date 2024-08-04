@@ -139,6 +139,24 @@ th, td {
     font-family: "Parisienne", cursive;
 }  
 
+@media (max-width: 576px) {   
+    table, img, div {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 100% !important;
+    }
+    td.bmeImageContainer table tr {
+        display: flex;
+        flex-direction: column;
+    }
+    img.icon-image {
+        width: 35px !important;
+        max-width: 35px !important;
+        min-width: 35px !important;
+        margin-bottom: 1rem;
+    }
+}
+
 @media (min-width: 1200px) {  
     .card-bg{
         max-width: 600px;
