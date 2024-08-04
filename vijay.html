@@ -4,9 +4,9 @@
         <meta charset="UTF-8">
         <title>Invite - Vijay SK</title>
         <meta name="title" content="We extend our heartfelt greetings to all of you. On the upcoming Friday, 23.08.2024.">
-        <meta name="description" content="We extend our heartfelt greetings to all of you. On the upcoming Friday, 23.08.2024, we will be hosting the engagement ceremony of our daughter, Mahalakshmi Selvi T. Sabari Priya, and our son, S. K. Vijay, at RAJ GANPATHY BANQUET HALL, VIVID HOTELS, B21 KARUR BYPASS Rd, opposite Chathiram Bus Stand, Tiruchirappalli, at 4:45 PM.
+        <meta name="description" content="We extend our heartfelt greetings to all of you. On the upcoming Friday, 23.08.2024, we will be hosting the engagement ceremony of our daughter, Mahalakshmi Selvi D. Sabari Priya, and our son, S. K. Vijay, at RAJ GANPATHY BANQUET HALL, VIVID HOTELS, B21 KARUR BYPASS Rd, opposite Chathiram Bus Stand, Tiruchirappalli, at 4:45 PM.
 ">
-        <meta name="keywords" content="We extend our heartfelt greetings to all of you. On the upcoming Friday, 23.08.2024, we will be hosting the engagement ceremony of our daughter, Mahalakshmi Selvi T. Sabari Priya, and our son, S. K. Vijay, at RAJ GANPATHY BANQUET HALL, VIVID HOTELS, B21 KARUR BYPASS Rd, opposite Chathiram Bus Stand, Tiruchirappalli, at 4:45 PM.
+        <meta name="keywords" content="We extend our heartfelt greetings to all of you. On the upcoming Friday, 23.08.2024, we will be hosting the engagement ceremony of our daughter, Mahalakshmi Selvi D. Sabari Priya, and our son, S. K. Vijay, at RAJ GANPATHY BANQUET HALL, VIVID HOTELS, B21 KARUR BYPASS Rd, opposite Chathiram Bus Stand, Tiruchirappalli, at 4:45 PM.
 ">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta property="og:image" content="https://cdn.example.com/uploads/images/webpage_300x200.png" />
@@ -448,7 +448,7 @@
                                                                                                                             style="line-height: 150%; text-align: center;">
                                                                                                                             <span style="font-size: 30px; font-family: 'Times New Roman', Times, Baskerville, Georgia, serif; color: #812955; line-height: 150%;">S K Vijay</span><br>
                                                                                                                             <span style="font-size: 18px; font-family: 'Times New Roman', Times, Baskerville, Georgia, serif; color: #812955; line-height: 150%;"><em>to</em></span><br>
-                                                                                                                            <span style="font-size: 30px; font-family: 'Times New Roman', Times, Baskerville, Georgia, serif; color: #812955; line-height: 150%;">T Sabari Priya</span>
+                                                                                                                            <span style="font-size: 30px; font-family: 'Times New Roman', Times, Baskerville, Georgia, serif; color: #812955; line-height: 150%;">D Sabari Priya</span>
                                                                                                                         </div>
                                                                                                                     </td>
                                                                                                                 </tr>
@@ -864,14 +864,41 @@
             </tr>
         </tbody>
     </table>
-
-
-    
+ 
 
     <script src="asset/lib/bootstrap/popper.min.js"></script>
     <script src="asset/lib/bootstrap/jquery-3.2.1.slim.min.js"></script>
     <script src="asset/lib/bootstrap/bootstrap.min.js"></script>
     <script src="asset/js/script.js"></script>
+
+    <script>
+           $(document).ready(function() {
+            var audio = $('#myAudio')[0]; // Get the audio element
+
+            // Try to play the audio
+            audio.play().then(() => {
+                console.log('Playback started successfully.');
+            }).catch(function(error) {
+                console.log('Playback failed:', error);
+                // Show a play button if playback fails
+                showPlayButton();
+            });
+        });
+
+        function showPlayButton() {
+            var button = $('<button>Click to Play Audio</button>');
+            button.on('click', function() {
+                $('#myAudio')[0].play().then(() => {
+                    $(this).remove(); // Remove button after click if playback starts
+                }).catch(function(error) {
+                    console.log('Playback failed on button click:', error);
+                });
+            });
+            $('body').append(button);
+        }
+
+   
+    </script>
     <!--  -->
     <script src="asset/lib/owl-carousel/jquery.min.js"></script>
     <script src="asset/lib/owl-carousel/owl.carousel.js"></script>
@@ -882,8 +909,7 @@
     <script src="includes/js/jquery.validate.min.js"></script>
     <script src="./asset/lib/magnific-popup/jquery.fancybox.min.js"></script>
     <script src="https://rendro.github.io/easy-pie-chart/javascripts/jquery.easy-pie-chart.js"></script>
-
-
+   
 </body>
 
 </html>

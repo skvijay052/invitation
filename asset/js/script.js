@@ -1,4 +1,5 @@
  $(document).ready(function() {
+   
     AOS.init({
         duration: 1200,
         startEvent: 'DOMContentLoaded',
@@ -7,9 +8,7 @@
     $('.popup-youtube').magnificPopup({
         type: 'iframe'
       });
-       
-     
-
+          
  }); 
 
  
